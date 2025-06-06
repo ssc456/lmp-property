@@ -2,11 +2,17 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   safelist: [
     {
-      pattern: /(bg|text|border)-(blue|green|red|teal|orange)-(500|600)/,
+      pattern: /(bg|text|border)-(blue|green|darkblue|gray|red|teal|orange)-(500|600)/,
     },
   ],
-  theme: {
-    extend: {},
+   theme: {
+    extend: {
+      colors: {
+        darkblue: {
+          700: '#0a2540'
+        }
+      }
+    }
   },
   plugins: [],
 };
